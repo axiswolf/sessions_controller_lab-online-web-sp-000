@@ -4,7 +4,7 @@ class SessionsController < ApplicationController
   end
 
   def create
-
+    session[:username] = params[:username] #creates username, saves it
   end
 
   def destroy
