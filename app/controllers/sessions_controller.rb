@@ -8,6 +8,7 @@ class SessionsController < ApplicationController
     #   redirect_to 'login'
     # else
       session[:name] = params[:name] #creates username, saves it
+      redirect_to '/'
     # end
   end
 
