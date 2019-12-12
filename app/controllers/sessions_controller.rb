@@ -10,6 +10,7 @@ class SessionsController < ApplicationController
       session[:name] = params[:name] #creates username, saves it
       redirect_to '/'
     end
+    redirect_to '/'
   end
 
   def destroy
