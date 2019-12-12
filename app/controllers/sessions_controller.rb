@@ -4,7 +4,11 @@ class SessionsController < ApplicationController
   end
 
   def create
-    session[:name] = params[:name] #creates username, saves it
+    if params[:name] = nil || params[:name] = []
+      redirect_to 'login'
+    else
+      session[:name] = params[:name] #creates username, saves it
+    end
   end
 
   def destroy
