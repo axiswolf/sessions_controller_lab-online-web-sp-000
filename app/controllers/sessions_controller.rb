@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-
+    session.delete :username # deletes username cookie
   end
 
 end
