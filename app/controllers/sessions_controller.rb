@@ -5,12 +5,10 @@ class SessionsController < ApplicationController
 
   def create
     if params[:name] = nil || params[:name] = []
-    #   redirect_to 'login'
-    # else
+      redirect_to 'login'
+    else
       session[:name] = params[:name] #creates username, saves it
       redirect_to '/'
-    else
-      redirect_to '/login'
     end
   end
 
